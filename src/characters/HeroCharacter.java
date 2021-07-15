@@ -58,10 +58,6 @@ public abstract class HeroCharacter {
         this.heroType = heroType;
     }
 
-    public void setBasePrimaryAttributes(PrimaryAttributes basePrimaryAttributes) {
-        this.totalPrimaryAttributes = basePrimaryAttributes;
-    }
-
     public void setPrimaryTotalAttributes() {
         PrimaryAttributes primaryAttributes = basePrimaryAttributes;
         if(equippedEquipments.containsKey(Slot.Weapon)){
@@ -70,17 +66,17 @@ public abstract class HeroCharacter {
             primaryAttributes.addIntelligence(equippedEquipments.get(Slot.Weapon).getAttributes().getIntelligence());
             primaryAttributes.addVitality(equippedEquipments.get(Slot.Weapon).getAttributes().getVitality());
         }
-        if(equippedEquipments.containsKey(Slot.Body)){
-            primaryAttributes.addDexterity(equippedEquipments.get(Slot.Body).getAttributes().getDexterity());
-            primaryAttributes.addStrength(equippedEquipments.get(Slot.Body).getAttributes().getStrength());
-            primaryAttributes.addIntelligence(equippedEquipments.get(Slot.Body).getAttributes().getIntelligence());
-            primaryAttributes.addVitality(equippedEquipments.get(Slot.Body).getAttributes().getVitality());
-        }
         if(equippedEquipments.containsKey(Slot.Head)){
             primaryAttributes.addDexterity(equippedEquipments.get(Slot.Head).getAttributes().getDexterity());
             primaryAttributes.addStrength(equippedEquipments.get(Slot.Head).getAttributes().getStrength());
             primaryAttributes.addIntelligence(equippedEquipments.get(Slot.Head).getAttributes().getIntelligence());
             primaryAttributes.addVitality(equippedEquipments.get(Slot.Head).getAttributes().getVitality());
+        }
+        if(equippedEquipments.containsKey(Slot.Body)){
+            primaryAttributes.addDexterity(equippedEquipments.get(Slot.Body).getAttributes().getDexterity());
+            primaryAttributes.addStrength(equippedEquipments.get(Slot.Body).getAttributes().getStrength());
+            primaryAttributes.addIntelligence(equippedEquipments.get(Slot.Body).getAttributes().getIntelligence());
+            primaryAttributes.addVitality(equippedEquipments.get(Slot.Body).getAttributes().getVitality());
         }
         if(equippedEquipments.containsKey(Slot.Legs)){
             primaryAttributes.addDexterity(equippedEquipments.get(Slot.Legs).getAttributes().getDexterity());
