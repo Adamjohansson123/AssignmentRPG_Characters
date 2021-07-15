@@ -24,11 +24,6 @@ public class Warrior extends HeroCharacter {
     } //Creates a warrior by sending heroType, name and level
 
     @Override
-    public void setDefaultAttributes(){
-
-    }
-
-    @Override
     void levelUpAttributes(){
         this.basePrimaryAttributes.setStrength(this.basePrimaryAttributes.getStrength() + 3);
         this.basePrimaryAttributes.setDexterity(this.basePrimaryAttributes.getDexterity() + 2);

@@ -23,10 +23,6 @@ public class Mage extends HeroCharacter {
         setPrimaryTotalAttributes();
     } //Creates a mage by sending heroType, name and level
 
-    public void setDefaultAttributes(){
-
-    }
-
     public void setSecondaryAttributes() {
 
     }

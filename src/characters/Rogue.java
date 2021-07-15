@@ -24,11 +24,6 @@ public class Rogue extends HeroCharacter {
     } //Creates a rogue by sending heroType, name and level
 
     @Override
-    public void setDefaultAttributes(){
-
-    }
-
-    @Override
     void levelUpAttributes(){
         this.basePrimaryAttributes.setStrength(this.basePrimaryAttributes.getStrength() + 1);
         this.basePrimaryAttributes.setDexterity(this.basePrimaryAttributes.getDexterity() + 4);

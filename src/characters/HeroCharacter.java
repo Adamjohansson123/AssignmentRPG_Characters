@@ -117,10 +117,6 @@ public abstract class HeroCharacter {
         return secondaryAttributes;
     }
 
-    public int getTotalPrimaryAttributes(){
-        return this.totalPrimaryAttributes.getVitality() + this.totalPrimaryAttributes.getStrength() + this.totalPrimaryAttributes.getDexterity() + this.totalPrimaryAttributes.getIntelligence();
-    }
-
     public void levelUpCharacter(int levelGain) throws IllegalArgumentException {
 
         if (levelGain >= 1) {
@@ -137,8 +133,6 @@ public abstract class HeroCharacter {
     } //Method to make hero level up and increase hero attributes.
 
     abstract void levelUpAttributes(); //Abstract method that subclasses can inherit to level upp hero attributes.
-
-    public abstract void setDefaultAttributes(); //Abstract setDefaultAttributes method that classes that inherit HeroCharacter can use.
 
     public abstract double getDPS(); //Abstract getDPS method that classes that inherit HeroCharacter can use.
 
@@ -182,6 +176,10 @@ public abstract class HeroCharacter {
         return true;
     } //Method that equips item to character.
     //Checks if item is a weapon or a armor. If it´s not a weapon then it´s a armor
+
+    public int getTotalPrimaryAttributes(){
+        return this.totalPrimaryAttributes.getVitality() + this.totalPrimaryAttributes.getStrength() + this.totalPrimaryAttributes.getDexterity() + this.totalPrimaryAttributes.getIntelligence();
+    }
 
     public void printHeroStats(){
         System.out.println("Name: " + this.name);

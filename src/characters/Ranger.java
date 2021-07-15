@@ -24,11 +24,6 @@ public class Ranger extends HeroCharacter {
     } //Creates a ranger by sending heroType, name and level
 
     @Override
-    public void setDefaultAttributes(){
-
-    }
-
-    @Override
     void levelUpAttributes(){
         this.basePrimaryAttributes.setStrength(this.basePrimaryAttributes.getStrength() + 1);
         this.basePrimaryAttributes.setDexterity(this.basePrimaryAttributes.getDexterity() + 5);
