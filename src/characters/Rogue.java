@@ -14,6 +14,15 @@ public class Rogue extends HeroCharacter {
         setPrimaryTotalAttributes();
     } //Creates a default rogue
 
+    public Rogue(HeroType heroType, String name, int level){
+        this.setHeroType(heroType);
+        this.setName(name);
+        this.setLevel(level);
+        this.basePrimaryAttributes = new PrimaryAttributes(1,1,8,5);
+        this.secondaryAttributes = new SecondaryAttributes(0,0,0);
+        setPrimaryTotalAttributes();
+    } //Creates a rogue by sending heroType, name and level
+
     @Override
     public void setDefaultAttributes(){
 
