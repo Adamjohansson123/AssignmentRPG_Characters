@@ -56,7 +56,6 @@ class HeroCharacterTest {
         assertEquals(8, baseAttributes.getVitality());
     }
 
-
     @Test
     void getBasePrimaryAttributes_isRogueCreatedWithProperAttributes_GetBasePrimaryAttributesEqualsGetBasePrimaryAttributes() {
         var newRogue = new Rogue();

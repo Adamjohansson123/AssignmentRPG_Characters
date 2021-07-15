@@ -186,6 +186,7 @@ public abstract class HeroCharacter {
         System.out.println("Health: " + this.secondaryAttributes.getHealth());
         System.out.println("Armor Rating: " + this.secondaryAttributes.getArmorRating());
         System.out.println("Elemental Resistance: " + this.secondaryAttributes.getElementalResistance());
+        System.out.println("DPS: " + this.getDPS());
 
     } //Prints out the stats for the hero
 
